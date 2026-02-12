@@ -19,173 +19,53 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let rand1 = Int.random(in: 1...45)
-        let rand2 = Int.random(in: 1...45)
-        label1.text = "\(rand2)"
-        let rand3 = Int.random(in: 1...45)
-        label1.text = "\(rand3)"
-        let rand4 = Int.random(in: 1...45)
-        label1.text = "\(rand4)"
-        let rand5 = Int.random(in: 1...45)
-        label1.text = "\(rand5)"
-        let rand6 = Int.random(in: 1...45)
-        label1.text = "\(rand6)"
-        let rand8 = Int.random(in: 1...45)
-        label1.text = "\(rand8)"
-
-        switch rand1
-        {
-        case 1...10:
-            label1.backgroundColor = UIColor.red
-        case 11...20:
-            label1.backgroundColor = UIColor.green
-        case 21...30:
-            label1.backgroundColor = UIColor.blue
-        case 31...40:
-            label1.backgroundColor = UIColor.yellow
-        case 41...45:
-            label1.backgroundColor = UIColor.purple
-        default:
-            break
-        }
-        
-        switch rand1
-        {
-        case 1...10:
-            label1.backgroundColor = UIColor.red
-        case 11...20:
-            label1.backgroundColor = UIColor.green
-        case 21...30:
-            label1.backgroundColor = UIColor.blue
-        case 31...40:
-            label1.backgroundColor = UIColor.yellow
-        case 41...45:
-            label1.backgroundColor = UIColor.purple
-        default:
-            break
-        }
-        
-        switch rand2
-        {
-        case 1...10:
-            label1.backgroundColor = UIColor.red
-        case 11...20:
-            label1.backgroundColor = UIColor.green
-        case 21...30:
-            label1.backgroundColor = UIColor.blue
-        case 31...40:
-            label1.backgroundColor = UIColor.yellow
-        case 41...45:
-            label1.backgroundColor = UIColor.purple
-        default:
-            break
-        }
-        
-        switch rand3
-        {
-        case 1...10:
-            label1.backgroundColor = UIColor.red
-        case 11...20:
-            label1.backgroundColor = UIColor.green
-        case 21...30:
-            label1.backgroundColor = UIColor.blue
-        case 31...40:
-            label1.backgroundColor = UIColor.yellow
-        case 41...45:
-            label1.backgroundColor = UIColor.purple
-        default:
-            break
-        }
-        
-        switch rand4
-        {
-        case 1...10:
-            label1.backgroundColor = UIColor.red
-        case 11...20:
-            label1.backgroundColor = UIColor.green
-        case 21...30:
-            label1.backgroundColor = UIColor.blue
-        case 31...40:
-            label1.backgroundColor = UIColor.yellow
-        case 41...45:
-            label1.backgroundColor = UIColor.purple
-        default:
-            break
-        }
-        
-        switch rand5
-        {
-        case 1...10:
-            label1.backgroundColor = UIColor.red
-        case 11...20:
-            label1.backgroundColor = UIColor.green
-        case 21...30:
-            label1.backgroundColor = UIColor.blue
-        case 31...40:
-            label1.backgroundColor = UIColor.yellow
-        case 41...45:
-            label1.backgroundColor = UIColor.purple
-        default:
-            break
-        }
-        
-        switch rand6
-        {
-        case 1...10:
-            label1.backgroundColor = UIColor.red
-        case 11...20:
-            label1.backgroundColor = UIColor.green
-        case 21...30:
-            label1.backgroundColor = UIColor.blue
-        case 31...40:
-            label1.backgroundColor = UIColor.yellow
-        case 41...45:
-            label1.backgroundColor = UIColor.purple
-        default:
-            break
-        }
-        
-        switch rand8
-        {
-        case 1...10:
-            label1.backgroundColor = UIColor.red
-        case 11...20:
-            label1.backgroundColor = UIColor.green
-        case 21...30:
-            label1.backgroundColor = UIColor.blue
-        case 31...40:
-            label1.backgroundColor = UIColor.yellow
-        case 41...45:
-            label1.backgroundColor = UIColor.purple
-        default:
-            break
-        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        label1.layer.cornerRadius = label1.bounds.width / 2
-        label1.clipsToBounds = true
         
-        label2.layer.cornerRadius = label2.bounds.width / 2
-        label2.clipsToBounds = true
+        let labels = [label1!, label2!, label3!, label4!, label5!, label6!, label8!]
         
-        label3.layer.cornerRadius = label3.bounds.width / 2
-        label3.clipsToBounds = true
+        var nums = [Int]()
         
-        label4.layer.cornerRadius = label4.bounds.width / 2
-        label4.clipsToBounds = true
+        while nums.count < labels.count
+        {
+            let rand = Int.random(in: 1...45)
+            if !nums.contains(rand)
+            {
+                nums.append(rand)
+            }
+        }
         
-        label5.layer.cornerRadius = label5.bounds.width / 2
-        label5.clipsToBounds = true
+        let sortedNums = nums.sorted()
         
-        label6.layer.cornerRadius = label6.bounds.width / 2
-        label6.clipsToBounds = true
-        
+        for (index,label) in labels.enumerated()
+        {
+            label.layer.cornerRadius = label.bounds.width / 2
+            label.clipsToBounds = true
+            
+            label.text = "\(sortedNums[index])"
+            
+            switch sortedNums[index]
+            {
+            case 1...10:
+                label.backgroundColor = UIColor.red
+            case 11...20:
+                label.backgroundColor = UIColor.green
+            case 21...30:
+                label.backgroundColor = UIColor.blue
+            case 31...40:
+                label.backgroundColor = UIColor.yellow
+            case 41...45:
+                label.backgroundColor = UIColor.purple
+            default:
+                break
+            }
+        }
         label7.layer.cornerRadius = label7.bounds.width / 2
         label7.clipsToBounds = true
+        label7.backgroundColor = UIColor.purple
+        label7.textColor = .white
         
-        label8.layer.cornerRadius = label8.bounds.width / 2
-        label8.clipsToBounds = true
     }
 
 }
