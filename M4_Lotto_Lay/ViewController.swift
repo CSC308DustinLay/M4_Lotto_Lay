@@ -20,16 +20,132 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let rand1 = Int.random(in: 1...45)
-        label1.text = "\(rand1)"
-        label2.text = "\(Int.random(in: 1...45))"
-        label3.text = "\(Int.random(in: 1...45))"
-        label4.text = "\(Int.random(in: 1...45))"
-        label5.text = "\(Int.random(in: 1...45))"
-        label6.text = "\(Int.random(in: 1...45))"
-        //label7.text = "\(Int.random(in: 1...45))"
-        label8.text = "\(Int.random(in: 1...45))"
+        let rand2 = Int.random(in: 1...45)
+        label1.text = "\(rand2)"
+        let rand3 = Int.random(in: 1...45)
+        label1.text = "\(rand3)"
+        let rand4 = Int.random(in: 1...45)
+        label1.text = "\(rand4)"
+        let rand5 = Int.random(in: 1...45)
+        label1.text = "\(rand5)"
+        let rand6 = Int.random(in: 1...45)
+        label1.text = "\(rand6)"
+        let rand8 = Int.random(in: 1...45)
+        label1.text = "\(rand8)"
 
         switch rand1
+        {
+        case 1...10:
+            label1.backgroundColor = UIColor.red
+        case 11...20:
+            label1.backgroundColor = UIColor.green
+        case 21...30:
+            label1.backgroundColor = UIColor.blue
+        case 31...40:
+            label1.backgroundColor = UIColor.yellow
+        case 41...45:
+            label1.backgroundColor = UIColor.purple
+        default:
+            break
+        }
+        
+        switch rand1
+        {
+        case 1...10:
+            label1.backgroundColor = UIColor.red
+        case 11...20:
+            label1.backgroundColor = UIColor.green
+        case 21...30:
+            label1.backgroundColor = UIColor.blue
+        case 31...40:
+            label1.backgroundColor = UIColor.yellow
+        case 41...45:
+            label1.backgroundColor = UIColor.purple
+        default:
+            break
+        }
+        
+        switch rand2
+        {
+        case 1...10:
+            label1.backgroundColor = UIColor.red
+        case 11...20:
+            label1.backgroundColor = UIColor.green
+        case 21...30:
+            label1.backgroundColor = UIColor.blue
+        case 31...40:
+            label1.backgroundColor = UIColor.yellow
+        case 41...45:
+            label1.backgroundColor = UIColor.purple
+        default:
+            break
+        }
+        
+        switch rand3
+        {
+        case 1...10:
+            label1.backgroundColor = UIColor.red
+        case 11...20:
+            label1.backgroundColor = UIColor.green
+        case 21...30:
+            label1.backgroundColor = UIColor.blue
+        case 31...40:
+            label1.backgroundColor = UIColor.yellow
+        case 41...45:
+            label1.backgroundColor = UIColor.purple
+        default:
+            break
+        }
+        
+        switch rand4
+        {
+        case 1...10:
+            label1.backgroundColor = UIColor.red
+        case 11...20:
+            label1.backgroundColor = UIColor.green
+        case 21...30:
+            label1.backgroundColor = UIColor.blue
+        case 31...40:
+            label1.backgroundColor = UIColor.yellow
+        case 41...45:
+            label1.backgroundColor = UIColor.purple
+        default:
+            break
+        }
+        
+        switch rand5
+        {
+        case 1...10:
+            label1.backgroundColor = UIColor.red
+        case 11...20:
+            label1.backgroundColor = UIColor.green
+        case 21...30:
+            label1.backgroundColor = UIColor.blue
+        case 31...40:
+            label1.backgroundColor = UIColor.yellow
+        case 41...45:
+            label1.backgroundColor = UIColor.purple
+        default:
+            break
+        }
+        
+        switch rand6
+        {
+        case 1...10:
+            label1.backgroundColor = UIColor.red
+        case 11...20:
+            label1.backgroundColor = UIColor.green
+        case 21...30:
+            label1.backgroundColor = UIColor.blue
+        case 31...40:
+            label1.backgroundColor = UIColor.yellow
+        case 41...45:
+            label1.backgroundColor = UIColor.purple
+        default:
+            break
+        }
+        
+        switch rand8
         {
         case 1...10:
             label1.backgroundColor = UIColor.red
