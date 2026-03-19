@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kYY-gy-zpy">
-                                <rect key="frame" x="72" y="142" width="730" height="88.666666666666686"/>
+                                <rect key="frame" x="72" y="132" width="730" height="88.666666666666686"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOc-MM-hfD">
                                         <rect key="frame" x="0.0" y="0.0" width="84.333333333333329" height="88.666666666666671"/>
@@ -86,7 +86,7 @@
                         <constraints>
                             <constraint firstItem="kYY-gy-zpy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="DYJ-dt-Iai"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kYY-gy-zpy" secondAttribute="trailing" constant="10" id="ENy-hX-kNi"/>
-                            <constraint firstItem="kYY-gy-zpy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="msv-it-HlF"/>
+                            <constraint firstItem="kYY-gy-zpy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="msv-it-HlF"/>
                         </constraints>
                     </view>
                     <connections>
@@ -98,6 +98,13 @@
                         <outlet property="label6" destination="4JX-Rk-T1a" id="Qq1-Bz-QLm"/>
                         <outlet property="label7" destination="NsG-cy-FEf" id="gFG-xc-Pm7"/>
                         <outlet property="label8" destination="99Z-7W-zgn" id="LG2-TG-P7Y"/>
+                        <outletCollection property="labels" destination="FOc-MM-hfD" collectionClass="NSMutableArray" id="oyY-Kv-ZpT"/>
+                        <outletCollection property="labels" destination="ock-J7-RPD" collectionClass="NSMutableArray" id="4Ay-It-Nli"/>
+                        <outletCollection property="labels" destination="qie-Xs-RC5" collectionClass="NSMutableArray" id="wYS-ex-SAl"/>
+                        <outletCollection property="labels" destination="aKI-4f-LLj" collectionClass="NSMutableArray" id="e0N-qt-pQK"/>
+                        <outletCollection property="labels" destination="Bmq-6w-bvx" collectionClass="NSMutableArray" id="j7B-5M-5ik"/>
+                        <outletCollection property="labels" destination="4JX-Rk-T1a" collectionClass="NSMutableArray" id="9yU-7p-E3Q"/>
+                        <outletCollection property="labels" destination="99Z-7W-zgn" collectionClass="NSMutableArray" id="hdZ-G3-Waf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
